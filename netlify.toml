@@ -1,0 +1,17 @@
+[build]
+  command = "yarn build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
+
+[[redirects]]
+  from = "/en-us/*"
+  to = "/en-us/404"
+  status = 404
+
+[[redirects]]
+  from = "/es/*"
+  to = "/es/404"
+  status = 404
